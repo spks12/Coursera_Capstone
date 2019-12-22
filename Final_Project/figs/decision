@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Age Cluster Labels <= 0.0\nentropy = 1.0\nsamples = 35\nvalue = [13, 22]\nclass = 1", fillcolor="#aed7f4"] ;
+1 [label="entropy = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = 0", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HH Cluster Labels <= 2.0\nentropy = 1.0\nsamples = 31\nvalue = [9, 22]\nclass = 1", fillcolor="#8ac5f0"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Age Cluster Labels <= 4.0\nentropy = 1.0\nsamples = 22\nvalue = [4, 18]\nclass = 1", fillcolor="#65b3eb"] ;
+2 -> 3 ;
+4 [label="entropy = 1.0\nsamples = 15\nvalue = [4, 11]\nclass = 1", fillcolor="#81c1ee"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = 1", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="Area Cluster Labels <= 3.0\nentropy = 1.0\nsamples = 9\nvalue = [5, 4]\nclass = 0", fillcolor="#fae6d7"] ;
+2 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = 1", fillcolor="#399de5"] ;
+6 -> 7 ;
+8 [label="entropy = 1.0\nsamples = 7\nvalue = [5, 2]\nclass = 0", fillcolor="#efb388"] ;
+6 -> 8 ;
+}
